@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>00010358</name>
+    </assembly>
+    <members>
+        <member name="M:_00010358.Controllers.StudentController.Get">
+            <summary>
+            Returns a list of students
+            </summary>
+            <returns> A list of students</returns>
+            <remarks>
+            
+            Sample request
+            GET /api/Student
+            </remarks>
+            <response code="200">Returns a list of students</response>
+        </member>
+        <member name="M:_00010358.Controllers.StudentController.Get(System.Int32)">
+            <summary>
+            Get a single student
+            </summary>
+            <param name="id">Request's payload</param>
+            <response code="200">Returned single student successfully</response>
+        </member>
+        <member name="M:_00010358.Controllers.StudentController.Post(_00010358.DAL.Student)">
+            <summary>
+            Create a new student
+            </summary>
+            <param name="student">Request body</param>
+            <response code="200">Student added successfully</response>
+            
+        </member>
+        <member name="M:_00010358.Controllers.StudentController.Put(System.Int32,_00010358.DAL.Student)">
+            <summary>
+            Updates a student
+            </summary>
+            <param name="id">Pass id of student want to update</param>
+            <param name="student">Request body</param>
+            <response code="200">Student updated successfully</response>
+        </member>
+        <member name="M:_00010358.Controllers.StudentController.Delete(System.Int32)">
+            <summary>
+            Delete student from database
+            </summary>
+            <param name="id">Pass id of student want to delete</param>
+            <response code="200">Student deleted successfully</response>
+        </member>
+    </members>
+</doc>
